@@ -152,7 +152,8 @@ Don't forget to include ViewChild form `@angular/core`!
 
 ## Using Select Element
 
-Lets add select element to our form to be able to choose pizza size:
+Lets add select element to our form to be able to choose pizza size:  
+  
 ![pizza-gui-select.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-select.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
 Here is the HTML for the above example:
@@ -213,7 +214,8 @@ We have manually selected _medium_ option for the pizza size, and successfully a
 
 ## Using Radio Buttons
 
-Lets add some radio buttons to be able to choose desired ketchup type:
+Lets add some radio buttons to be able to choose desired ketchup type:  
+  
 ![pizza-gui-radio.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-radio.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
 And after adding code for this to out HTML, it looks like this:
@@ -278,13 +280,14 @@ export class AppComponent {
 }
 ```
 
-After submitting the form, we get the following output in the console:
+After submitting the form, we get the following output in the console:  
+  
 ![pizza-console-radio.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-console-radio.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
 ## Using Checkbox Element
 
 A checkbox is another common element we use in the forms, so let us add some to our application. We will use checkboxes to select ingredients for our pizza.
-
+  
 ![pizza-gui-checkbox.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-checkbox.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
 Lets see the HTML:
@@ -416,7 +419,8 @@ Now, when we don't enter a name of our pizza, it is not possible to submit the f
 > NOTE: Why use `touched` and `dirty`? Usually, we don't want to display that form is invalid before the user even had a chance of editing the form. The `touched` property tells us exactly that - if the field was touched or not. Another useful property is `dirty`, which tells us if the value of the field was changed. Similarly, we use `ng-touch` and `ng-dirty` in or css.
   
 
-Let's see how our form looks now, with input validation added:
+Let's see how our form looks now, with input validation added:  
+  
 ![pizza-gui-validation.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-validation.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
 ## Grouping Forms Data
@@ -456,7 +460,8 @@ So far we only used ngModel to tell Angular what HTML elements we want to have i
 ```
 Now we have value _Small_ chosen for the pizza size and _No Ketchup_ chosen for the ketchup type as a default.  
   
-Let's see how our form looks now, with input validation added:
+Let's see how our form looks now, with input validation added:  
+  
 ![pizza-gui-binding.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-binding.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
 We could also use two-way binding if required, by defining some property in our typescript and bind it using two-way binding syntax aka _banana in the box [()]_, for example: `[(ngModel)]="someCustomProperty"`.
@@ -521,7 +526,7 @@ export class AppComponent {
 ```
 We are passing our NgForm object to onGenerate method, just like we did with the _Submit_ button. Then, in the typescript code, we are calling setValue function and passing javascript object with some random values.
 After pressing _Generate_ button, the form looks like this:
-
+  
 ![pizza-gui-generate.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-generate.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
 Of course, it is possible to achieve the same result by using property binding, but it is nice to know this feature as well.
