@@ -5,7 +5,7 @@ install:
   - bundle install
   - gem install jekyll -v 3.4.3
   - gem install s3_website
-  - gem install minimal-mistakes
+  - gem install minimal-mistakes-jekyll
 
 branches:
   only:
