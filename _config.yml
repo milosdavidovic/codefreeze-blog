@@ -10,7 +10,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
+theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -58,7 +58,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia
 algolia:
@@ -99,7 +99,7 @@ analytics:
 author:
   name             : "Milos Davidovic"
   avatar           : "/assets/images/common/milos-avatar.jpg"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a .NET developer and this is my technical blog."
+  bio              : "Software developer, sport fanatic, traveling enthusiast, coffee addict."
   location         : "Novi Sad, Serbia"
   email            :
   uri              : https://www.thecodefreeze.com
@@ -193,10 +193,10 @@ sass:
 
 
 # Outputting
-  permalink: /:categories/:title/
-  paginate: 5 # amount of posts to show
-  paginate_path: /page:num/
-  timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)

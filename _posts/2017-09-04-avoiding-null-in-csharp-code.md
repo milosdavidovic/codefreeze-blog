@@ -2,7 +2,7 @@
 layout: single
 title: 'Avoiding Null References In C#'
 date: '2017-09-04 11:25:25 +0200'
-categories: csharp
+categories: 'C#'
 published: true
 ---
 
@@ -10,8 +10,20 @@ This post will give some ideas on how to eliminate null references in code, as t
 This could lead to lots of bugs, unpredictable behavior of the application and less readable code.
 Here are some ways we could use to reduce the number of null references in our code.
 
-## TryXXX methods
+## Content
 
+[TryXXX Methods](#tryxxx-methods)
+
+[Conditional Result Object ](#conditional-result-object)
+
+[Option (Maybe) Objects](#option-objects)
+
+[Null Objects](#null-objects)
+
+[Summary](#summary)
+
+
+## TryXXX methods
 
 This is a common way of providing information on whether the method executed successfully and avoid returning of the null object if method fails. Chances are you encountered these when using C# primitive types and their TryParse methods, which operate in the same way.
 
@@ -37,7 +49,7 @@ This is sort of "easy way out" and the code is more predictable and readable.
 The downside is that this doesn't help us much and client code will still need to check returned boolean value when calling this TrySendRequest method.
 
 
-## Conditional result object 
+## Conditional Result Object 
 
 This Conditional<T> class is a kind of a wrapper around the actual object of interest, and it additionally provides Boolean property (Success) which indicates the presence (and validity) of the Result object.
 
@@ -63,11 +75,9 @@ class Conditional<T>
 
 This approach was similar effect like TrySomething method and branching around Boolean value (Success) is still there.
 
-## Option (Maybe) objects
+## Option Objects
 
-**_The problem:_**
-
-We are invoking a method and expect some value to be returned. The problem here is that we are not sure if returned value will be null. It is certainly possible. So we have to protect our code with guard statements, or NullReferenceException will arise. This leads to a lot of if statements, but more importantly, every now and then someone will forget to check whether an object is null and the application could crash.  
+Lets explain what is an issue here. We are invoking a method and expect some value to be returned. The problem is that we are not sure if returned value will be null. It is certainly possible. So we have to protect our code with guard statements, or NullReferenceException will arise. This leads to a lot of if statements, but more importantly, every now and then someone will forget to check whether an object is null and the application could crash.  
 
 The idea behind Option (Maybe) objects is to transform our object to a collection of objects of the same type implementing IEnumerable<T> interface and use the power of Linq to Objects to perform logic execution. Inside Option class, there are two constructors at our disposal. First accepts no parameters and it just creates an empty collection of objects. The other one is used in case we indeed have an object and it creates a collection with only one item. This Option class is now used to represent our object in the form of a collection and it will never be null. If the collection is empty, no action will be executed and without exception.
 Here is one simple example of the problematic situation:
@@ -349,3 +359,9 @@ public static void Main (string[] args)
 ```
 
 The null object pattern makes the code cleaner and more readable. Null object classes are often implemented as singletons, so only one instance is used throughout the entire application. If Article constructor receives null as the discount, an exception will be raised at the object creation level as it should, so we have no nasty surprises in the later stages of code execution.
+
+##  Summary
+
+These were the some ideas on how to eliminate null references in code, and hopefully improve the code we write by making it more readable and with less bugs.
+
+Thanks for reading and feel free to check out other articles on the Code Freeze!

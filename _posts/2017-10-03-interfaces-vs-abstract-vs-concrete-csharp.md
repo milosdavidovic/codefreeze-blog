@@ -2,6 +2,7 @@
 title: 'Concrete vs Abstract vs Interface'
 layout: single
 published: false
+categories: 'C#'
 ---
 ## Concrete vs Abstract vs Interface
 

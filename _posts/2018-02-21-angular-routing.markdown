@@ -2,7 +2,7 @@
 layout: single
 title:  "Angular Routing"
 date:   2018-02-21 16:27:25 +0100
-categories: frontend
+categories: angular
 published: true
 tags: angular routing routes
 ---
@@ -232,4 +232,6 @@ this.activatedRoute.queryParams
 
 ### Summary
 
-Here we have covered some of the Angular's routing features and it is hopefully enough to get started with creating a simple navigation between different parts of our application. There is a lot more regarding Angular's routing then it is covered here, and I can recommend to check the official documentation to learn, buy following this [link](https://angular.io/guide/router). 
+Here we have covered some of the Angular's routing features and it is hopefully enough to get started with creating a simple navigation between different parts of our application. There is a lot more regarding Angular's routing then it is covered here, and I can recommend to check the official documentation to learn, buy following this [link](https://angular.io/guide/router).  
+  
+Thanks for reading and feel free to check out other articles on the Code Freeze!

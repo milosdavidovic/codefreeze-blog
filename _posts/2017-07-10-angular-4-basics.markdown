@@ -2,7 +2,7 @@
 layout: single
 title:  "Angular 4 Basics"
 date:   2017-07-10 11:10:25 +0200
-categories: frontend
+categories: angular
 published: false
 ---
 

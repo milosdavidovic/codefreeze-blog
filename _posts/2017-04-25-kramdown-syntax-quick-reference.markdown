@@ -1,13 +1,13 @@
 ---
 layout: single
-title:  "Jekyll Markdown Style Lorem Ipsum"
+title:  "Kramdown Syntax Quick Reference"
 date:   2017-04-25 11:25:25 +0200
-categories: jekyll intro
+categories: jekyll
 ---
 
-This is the sample page where basics of markdown syntax are demonstrated. It is a bunch of nonsense text just to show some markdown language capabilities. It is quite easy to write markdown once you get used to it.
+The Kramdown syntax is a superset of the Markdown syntax and it is designed so that is can be converted to HTML. This is the sample page where basics of markdown syntax are demonstrated. It is a bunch of nonsense text just to show some markdown language capabilities. It is quite easy to write markdown once you get used to it.
 
-### Content
+## Content
 
 [Page linking](#page-linking)
 
@@ -27,7 +27,9 @@ This is the sample page where basics of markdown syntax are demonstrated. It is 
 
 [Escaping special characters](#escaping-special-characters)
 
-#### Page linking
+[Summary](#summary)
+
+## Page linking
 
 It is possible to enable 'jumping' to content just by referencing to the heading name.
 
@@ -41,7 +43,7 @@ Result:
 
 [Paragraphs and line breaks](#paragraphs-and-line-breaks)
 
-#### Headings ####
+## Headings
 
 There are four levels of headers available in markdown. This is achieved by surrounding text with *hash* characters (*space* is needed between hash characters and the text). This is an example of markdown code for headings:
 
@@ -78,7 +80,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus nisi ante
 
 Donec sed dapibus sem. Fusce aliquet vulputate lorem et dignissim. Nullam eu convallis ante. Fusce eu dui lacus. Aliquam rhoncus dolor quis risus blandit posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce arcu ex, consectetur id tincidunt quis, elementum quis est. Maecenas placerat congue nisi lobortis euismod. Suspendisse porta sed ipsum eu gravida. Aliquam tempor ultricies nulla a pretium. In ultrices lobortis purus, eget aliquet odio laoreet nec. Aliquam aliquet risus quis tincidunt semper. Ut facilisis, orci non tempus lobortis, diam tellus finibus nisl, vel vehicula purus massa nec ante. 
 
-#### Italic and bold
+## Italic and bold
 
 Making text italic and bold is also possible in markdown with help of *star* and *underscore* characters. Let's write an example sentence:
 ```
@@ -87,7 +89,7 @@ Ut iaculis id **purus** at *lacinia*. Proin nibh mi, **egestas** sit amet lacus 
 That will produce:
 Ut iaculis id **purus** at *lacinia*. Proin nibh mi, **egestas** sit amet lacus a, *placerat pretium arcu*.
 
-#### Lists
+## Lists
 Markdown includes support for ordered and unordered lists:
 ```
 Animals list (unordered):
@@ -123,7 +125,7 @@ To-do list (ordered):
 3. ?
 4. Profit
 
-#### Code snippets
+## Code snippets
 
 Code snippets are written using back-tick character:
 
@@ -145,7 +147,7 @@ for(int i = 0; i < 10; i++)
 }
 ```
 For syntax highlighting, just add language name after opening three back ticks (eg. \`\`\`javascript)
-#### Images
+## Images
 
 To insert image into blog post following syntax is used:
 
@@ -155,7 +157,7 @@ To insert image into blog post following syntax is used:
 That will produce:
 ![minion](https://octodex.github.com/images/minion.png "Minion")
 
-#### Links
+## Links
 
 Also, you can reference any content using the similar syntax:
 
@@ -166,7 +168,7 @@ That will produce:
 
 [Google](http://www.google.com)
 
-#### Escaping special characters
+## Escaping special characters
 
 You can escape special character using backslash in front of special character:
 
@@ -179,3 +181,9 @@ Example code:
 That will produce:
 
 \`int i = 0;\` 
+
+## Summary 
+
+This quick reference shows only the basic syntax with usage example for the Kramdown syntax. For more information I recommend visiting offical [page](https://kramdown.gettalong.org/).  
+  
+Thanks for reading and feel free to check out other articles on the Code Freeze!

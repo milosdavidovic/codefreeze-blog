@@ -2,7 +2,7 @@
 layout: single
 title:  "Angular Forms - The Template Approach"
 date:   2018-03-01 16:27:25 +0100
-categories: frontend
+categories: angular
 published: true
 ---
 
@@ -29,7 +29,7 @@ There are two approaches to developing forms in Angular: Template and Reactive. 
 
 [Setting And Patching The Data](#setting-and-patching-the-data)
 
-### Creating Simple Form
+## Creating Simple Form
 
 Lets start with a simple form, which has one input element and a submit button:  
   
@@ -63,7 +63,7 @@ Let's create some basic HTML for demonstration purposes:
 </div>
 ```
 
-### Accessing Forms Data From Typescript
+## Accessing Forms Data From Typescript
 
 Now, lets modify this form using the Angular syntax: 
 
@@ -150,7 +150,7 @@ export class AppComponent {
 ```
 Don't forget to include ViewChild form `@angular/core`!
 
-### Using Select Element
+## Using Select Element
 
 Lets add select element to our form to be able to choose pizza size:
 ![pizza-gui-select.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-select.png" | relative_url }}){:style="border: 1px solid #ddd;"}
@@ -211,7 +211,7 @@ We have manually selected _medium_ option for the pizza size, and successfully a
 
 ![pizza-console-select.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-console-select.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
-### Using Radio Buttons
+## Using Radio Buttons
 
 Lets add some radio buttons to be able to choose desired ketchup type:
 ![pizza-gui-radio.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-radio.png" | relative_url }}){:style="border: 1px solid #ddd;"}
@@ -281,7 +281,7 @@ export class AppComponent {
 After submitting the form, we get the following output in the console:
 ![pizza-console-radio.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-console-radio.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
-### Using Checkbox Element
+## Using Checkbox Element
 
 A checkbox is another common element we use in the forms, so let us add some to our application. We will use checkboxes to select ingredients for our pizza.
 
@@ -383,7 +383,7 @@ Now, when the form is submitted, we can see that all of our checkboxes in the co
   
 ![pizza-console-checkbox.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-console-checkbox.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
-### Adding Forms Validation
+## Adding Forms Validation
 
 So far we only used _ngForm_ object to access value property, but there is a lot more to it. We can also use this object for the form validation purposes.
 Let us say we want to make our pizza name input field mandatory. Here is some code which demonstrates how to achieve this with help of Angular.
@@ -419,7 +419,7 @@ Now, when we don't enter a name of our pizza, it is not possible to submit the f
 Let's see how our form looks now, with input validation added:
 ![pizza-gui-validation.png]({{ "/assets/images/2018-03-01-angular-forms/pizza-gui-validation.png" | relative_url }}){:style="border: 1px solid #ddd;"}
 
-### Grouping Forms Data
+## Grouping Forms Data
 
 It is possible to group several elements in a group in order to have some structure in our application, which is helpful in larger forms. It also helps with the validation, giving us the possibility to check validation of a group of elements instead of entire form.
 We can create a group by placing `ngModelGroup` directive in a wrapping div element for example. `ngModelGroup` needs a name, so we can reference it later in  our code, and here is the example:
@@ -431,7 +431,7 @@ We can create a group by placing `ngModelGroup` directive in a wrapping div elem
 </div>
 ```
 
-### Default Values And Data Binding
+## Default Values And Data Binding
 
 So far we only used ngModel to tell Angular what HTML elements we want to have in our form. We can also use property binding to set initial data of our elements. Let's set initial values for our __pizza size__ and __ketchup type__. We would chang out HTML as follows:
 
@@ -461,7 +461,7 @@ Let's see how our form looks now, with input validation added:
 
 We could also use two-way binding if required, by defining some property in our typescript and bind it using two-way binding syntax aka _banana in the box [()]_, for example: `[(ngModel)]="someCustomProperty"`.
 
-### Setting And Patching The Data
+## Setting And Patching The Data
 
 Yet another way of setting the form's data is by using our NgForm object and it's setValue function. We need to pass javascript object when calling this function, exactly representing our form data. To demonstrate this, let' add _Generate_ button that we can use to populate our form with some hardcoded data.
   
@@ -532,3 +532,9 @@ pizzaForm.form.patchValue({
       name: this.defaultName
     });
 ```
+
+## Summary
+
+In the examples shown in this post we used some of the features the Angular is providing in order to make our lives easier when dealing with HTML form's data. This can be enough to get started, but as there is a lot more to Angular Forms, I can recommend visiting the official documentation by following this [link](https://angular.io/guide/forms).
+
+Thanks for reading and feel free to check out other articles on the Code Freeze!
