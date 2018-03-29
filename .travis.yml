@@ -10,6 +10,7 @@ install:
 branches:
   only:
     - master
+    - stage
 
 script: bundle exec jekyll build
 after_success: s3_website push
