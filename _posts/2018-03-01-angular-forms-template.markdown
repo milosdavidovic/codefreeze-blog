@@ -4,6 +4,8 @@ title:  "Angular Forms - The Template Approach"
 date:   2018-03-01 16:27:25 +0100
 categories: angular
 published: true
+header:
+  teaser: /assets/images/common/angular-logo.png
 ---
 
 It is absolutely possible to create form and handle user input in the HTML, why would we need Angular's help to do this? Problem lies in the fact that we usually end up with submitting form's data to the server using the submit button. Due to the fact that we are creating SPA with help of the Angular framework and therefore there no "submitting", we need a different approach. Instead of the submitting, we can use Angular's Http Module to send form's data back and forth between our application and some backend server. Additionally, Angular helps us with this task by providing lot of functionality one might need when dealing with forms. Some of this functionality we get out-of-box with Angular are: easy access to form's data, user input validation, ability to conditionally change how form is displayed and what is visible or enabled and much more. 
