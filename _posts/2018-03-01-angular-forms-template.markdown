@@ -4,6 +4,7 @@ title:  "Angular Forms - The Template Approach"
 date:   2018-03-01 16:27:25 +0100
 categories: angular
 published: true
+comments: true
 header:
   teaser: /assets/images/common/angular-logo.png
 ---

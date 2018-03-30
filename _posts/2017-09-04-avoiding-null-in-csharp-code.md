@@ -4,6 +4,7 @@ title: 'Avoiding Null References In C#'
 date: '2017-09-04 11:25:25 +0200'
 categories: 'C#'
 published: true
+comments: true
 header:
   teaser: /assets/images/common/csharp-logo.png
 ---

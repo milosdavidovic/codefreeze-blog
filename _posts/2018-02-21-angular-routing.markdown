@@ -4,6 +4,7 @@ title:  "Angular Routing"
 date:   2018-02-21 16:27:25 +0100
 categories: angular
 published: true
+comments: true
 tags: angular routing routes
 header:
   teaser: /assets/images/common/angular-logo.png
