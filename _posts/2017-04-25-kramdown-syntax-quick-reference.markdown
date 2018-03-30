@@ -3,6 +3,8 @@ layout: single
 title:  "Kramdown Syntax Quick Reference"
 date:   2017-04-25 11:25:25 +0200
 categories: jekyll
+header:
+  teaser: /assets/images/common/markdown-logo.png
 ---
 
 The Kramdown syntax is a superset of the Markdown syntax and it is designed so that is can be converted to HTML. This is the sample page where basics of markdown syntax are demonstrated. It is a bunch of nonsense text just to show some markdown language capabilities. It is quite easy to write markdown once you get used to it.

@@ -4,6 +4,8 @@ title:  "Angular 4 Basics"
 date:   2017-07-10 11:10:25 +0200
 categories: angular
 published: false
+header:
+  teaser: /assets/images/common/angular-logo.png
 ---
 
 This is absolute beginners guide for setting-up development environment for writing AngularJs 4 application. This post is intended to serve as quick-start guide for developing first Angular 4 project as well as quick reference for Angular basics.
