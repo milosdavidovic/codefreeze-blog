@@ -4,6 +4,8 @@ title: 'Avoiding Null References In C#'
 date: '2017-09-04 11:25:25 +0200'
 categories: 'C#'
 published: true
+header:
+  teaser: /assets/images/common/csharp-logo.png
 ---
 
 This post will give some ideas on how to eliminate null references in code, as they are identified as common source of bugs and pure code design. In object-oriented software we often struggle with null references, and miss-use them to pass some information to the client, like that method was not executed successfully, or some item was not found.
