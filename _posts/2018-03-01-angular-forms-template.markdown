@@ -32,6 +32,8 @@ There are two approaches to developing forms in Angular: Template and Reactive. 
 
 [Setting And Patching The Data](#setting-and-patching-the-data)
 
+[Summary](#summary)
+
 ## Creating Simple Form
 
 Lets start with a simple form, which has one input element and a submit button:  
