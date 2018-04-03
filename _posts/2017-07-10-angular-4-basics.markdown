@@ -3,6 +3,7 @@ layout: single
 title:  "Angular 4 Basics"
 date:   2017-07-10 11:10:25 +0200
 categories: angular
+tags: angular basics helloworld
 published: false
 header:
   teaser: /assets/images/common/angular-logo.png
