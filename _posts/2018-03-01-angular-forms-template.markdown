@@ -3,6 +3,7 @@ layout: single
 title:  "Angular Forms - The Template Approach"
 date:   2018-03-01 16:27:25 +0100
 categories: angular
+tags: angular forms template
 published: true
 comments: true
 header:

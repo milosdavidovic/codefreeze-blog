@@ -2,7 +2,8 @@
 title: 'Concrete vs Abstract vs Interface'
 layout: single
 published: false
-categories: 'C#'
+categories: 'dotnet'
+tags: csharp dotnet object-oriented abstract interface
 ---
 ## Concrete vs Abstract vs Interface
 
