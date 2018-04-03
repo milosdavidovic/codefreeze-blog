@@ -2,7 +2,8 @@
 layout: single
 title: 'Avoiding Null References In C#'
 date: '2017-09-04 11:25:25 +0200'
-categories: 'C#'
+categories: 'dotnet'
+tags: csharp dotnet null option conditional
 published: true
 comments: true
 header:

@@ -3,6 +3,7 @@ layout: single
 title:  "Kramdown Syntax Quick Reference"
 date:   2017-04-25 11:25:25 +0200
 categories: jekyll
+tags: kramdown markdown
 comments: true
 header:
   teaser: /assets/images/common/markdown-logo.png
