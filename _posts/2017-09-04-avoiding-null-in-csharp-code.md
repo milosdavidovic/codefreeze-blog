@@ -109,7 +109,7 @@ public class Leprechaun
     
     public Leprechaun(Gold gold)
     {
-        Gold = gold;
+        Stash = gold;
     }
     
     public Gold SurrenderGold()
@@ -203,7 +203,7 @@ public class Leprechaun
 ```
 
 Now we don't care if there is gold or not, because if a collection is empty, nothing will be executed. 
-We could also hide foreach loop be creating extension for Enumerable<T> class as follows:
+We could also hide foreach loop by creating extension for Enumerable<T> class as follows:
 
 
 ```cs
